@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <div id="frame">
+        <div data-depth="-1" id="painting">
+            <img id="background" src="./public/img/adam_et_dieu_Background.png" alt="">
+        </div>
+        <div id="character">
+            <div data-depth='-2'>
+                <img id="adam" src="./public/img/adam_et_dieu.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/parallax-js/dist/parallax.js"></script>
+    <script>
+        var painting = document.getElementById('painting');
+        var character = document.getElementById('character');
+        var frame = document.getElementById('frame');
+        var parallaxInstance = new Parallax(painting);
+        var parallaxInstance = new Parallax(character);
+        var parallaxInstance = new Parallax(frame);
+    </script>
+</body>
+</html>

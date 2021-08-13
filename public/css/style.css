@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#frame{
+    position: relative;
+}
+
+#painting{
+    position: relative;
+}
+
+#painting #background{
+    width: 100%;
+    height: 100vh;
+    transform: scale(1.2) !important;
+}
+
+#character{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+#character #adam{
+    width: 100%;
+    height: 100vh;
+    transform: scale(1.2);
+}
